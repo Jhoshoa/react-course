@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Message from './Message';
 
 const SimpleForm = () => {
 
@@ -21,17 +22,17 @@ const SimpleForm = () => {
     // This is called only the first time it is rendered the component
     // due to the [] in the second parameter of the useEffect
     useEffect(() => {
-      console.log("useEffect called!");
+      // console.log("useEffect called!");
     }, []);
 
     // This will be called everytime the formState change
     useEffect(() => {
-      console.log("El formState cambio!!");
+      // console.log("El formState cambio!!");
     }, [formState]);
 
     // This will be called everytime the email change
     useEffect(() => {
-      console.log("email changed !!!!!!");
+      // console.log("email changed !!!!!!");
     }, [email]);
 
   return (
@@ -56,6 +57,10 @@ const SimpleForm = () => {
             value={email}
             onChange={onInputChange}
         />
+
+        {
+          (username === 'josoe') && <Message />
+        }
     </>
   )
 }
