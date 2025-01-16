@@ -9,9 +9,10 @@ import FormWithCustomHook from './02-useEffect/FormWithCustomHook.jsx'
 import MultipleCustomHooks from './03-examples/MultipleCustomHooks.jsx'
 import Momorize from './06-memos/Momorize.jsx'
 import MemoHook from './06-memos/MemoHook.jsx'
+import CallbackHook from './06-memos/CallbackHook.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <MemoHook />
+    <CallbackHook />
   </StrictMode>
 )
