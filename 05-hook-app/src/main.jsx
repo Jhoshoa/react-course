@@ -7,9 +7,10 @@ import CounterWithCustomHook from './01-useState/CounterWithCustomHook.jsx'
 import SimpleForm from './02-useEffect/simpleForm.jsx'
 import FormWithCustomHook from './02-useEffect/FormWithCustomHook.jsx'
 import MultipleCustomHooks from './03-examples/MultipleCustomHooks.jsx'
+import Momorize from './06-memos/Momorize.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <MultipleCustomHooks />
+    <Momorize />
   </StrictMode>
 )
