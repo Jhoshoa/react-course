@@ -1,7 +1,7 @@
 import React from 'react'
 import TodoItem from './TodoItem'
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos = [] }) => {
 
     //console.log("ingresando =>" + JSON.stringify(todos));
 
@@ -9,6 +9,7 @@ const TodoList = ({ todos }) => {
     <>
         <ul className='list-group'>
             {
+                todos.length > 0 && 
                 todos.map((item) => (
                     <TodoItem key={item.id} todoItem={item} />
                 ))
