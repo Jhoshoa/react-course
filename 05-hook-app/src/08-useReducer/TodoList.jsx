@@ -1,7 +1,7 @@
 import React from 'react'
 import TodoItem from './TodoItem'
 
-const TodoList = ({ todos = [] }) => {
+const TodoList = ({ todos = [], onDeleteTodo }) => {
 
     //console.log("ingresando =>" + JSON.stringify(todos));
 
@@ -11,7 +11,7 @@ const TodoList = ({ todos = [] }) => {
             {
                 todos.length > 0 && 
                 todos.map((item) => (
-                    <TodoItem key={item.id} todoItem={item} />
+                    <TodoItem key={item.id} todoItem={item} onDeleteTodo={ onDeleteTodo } />
                 ))
             }
         </ul>

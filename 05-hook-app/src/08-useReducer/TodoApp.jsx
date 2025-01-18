@@ -39,6 +39,15 @@ const TodoApp = () => {
         console.log({todo});
     }
 
+    const handleDeleteTodo = ( id ) => {
+
+        // console.log({id});
+        dispach({
+            type: '[TODO] Remove Todo',
+            payload: id,
+        })
+    }
+
   return (
     <>
         <h1>Todo App: 10, <small>pendientes: 2</small> </h1>
@@ -46,7 +55,7 @@ const TodoApp = () => {
 
         <div className='row'>
             <div className="col-7">
-                <TodoList todos={todos} />
+                <TodoList todos={todos} onDeleteTodo={ handleDeleteTodo } />
             </div>
 
             <div className="col-5">

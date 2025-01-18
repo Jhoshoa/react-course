@@ -1,13 +1,18 @@
 import React from 'react'
 import PropTypes from "prop-types"
 
-const TodoItem = ( {todoItem} ) => {
+const TodoItem = ({ todoItem, onDeleteTodo }) => {
 
     // console.log("TodoItem =>" + id);
   return (
     <li className='list-group-item d-flex justify-content-between'>
         <span className='align-self-center'>{todoItem.description}</span>
-        <button className='btn btn-danger'>Borrar</button>
+        <button 
+            className='btn btn-danger'
+            onClick={ () => onDeleteTodo( todoItem.id )}
+        >
+            Borrar
+        </button>
     </li>
   )
 }
