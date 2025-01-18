@@ -14,7 +14,7 @@ const useForm = ( initialForm = {} ) => {
     }
 
     const onResetForm = () => {
-        console.log( initialForm );
+        //console.log( initialForm );
         
         setFormState( initialForm );
     }
