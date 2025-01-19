@@ -4,10 +4,11 @@ import HomePage from './HomePage'
 import LoginPage from './LoginPage'
 import AboutPage from './AboutPage'
 import NavBar from './NavBar'
+import UserProvider from './context/UserProvider'
 
 const MainApp = () => {
   return (
-    <>
+    <UserProvider>
         <h1>Main</h1>
 
         {/* This woks but make a complet refresh of ALL page */}
@@ -35,7 +36,7 @@ const MainApp = () => {
             Another way
             <Route path='/*' element={ <Navigate to='/about' /> } />
         </Routes>
-    </>
+    </UserProvider>
   )
 }
 
