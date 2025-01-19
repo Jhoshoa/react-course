@@ -3,6 +3,7 @@ import { Routes, Route, Navigate, Link } from 'react-router'
 import HomePage from './HomePage'
 import LoginPage from './LoginPage'
 import AboutPage from './AboutPage'
+import NavBar from './NavBar'
 
 const MainApp = () => {
   return (
@@ -15,9 +16,11 @@ const MainApp = () => {
         <a  href='/login'>Login</a> */}
 
         {/* A better way to redirect or go a page is using the Link from React-router */}
-        <Link to='/'>Home</Link>
+        {/* <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
-        <Link to='/login'>Login</Link>
+        <Link to='/login'>Login</Link> */}
+
+        <NavBar />
 
         <hr />
 
