@@ -7,8 +7,12 @@ const HomePage = () => {
 
   return (
     <>
-        <h1>Home <small>{user?.name}</small></h1>
+        <h1>Home: <small>{user?.name}</small></h1>
         <hr />
+
+        <pre>
+          { JSON.stringify(user, null, 3)}
+        </pre>
     </>
   )
 }
