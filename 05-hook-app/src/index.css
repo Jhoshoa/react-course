@@ -5,3 +5,10 @@ body {
 button {
   margin-right: 10px;
 }
+
+/* But even we are using Link from reat-router, an **a** html 
+van used to modify the style, because behind it is converted
+to **a** html element */
+a {
+  margin-right: 5px;
+}
