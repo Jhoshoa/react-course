@@ -11,27 +11,21 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <NavLink
-                                className={({ isActive }) => {
-                                    return `nav-link ${isActive ? 'active' : ''}`
-                                }}
+                                className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                                 to='/'
                             >
                                 Home
                             </NavLink>
 
                             <NavLink
-                                className={({ isActive }) => {
-                                    return `nav-link ${isActive ? 'active' : ''}`
-                                }}
+                                className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                                 to='/about'
                             >
                                 About
                             </NavLink>
 
                             <NavLink
-                                className={({ isActive }) => {
-                                    return `nav-link ${isActive ? 'active' : ''}`
-                                }}
+                                className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                                 to='/login'
                             >
                                 Login
