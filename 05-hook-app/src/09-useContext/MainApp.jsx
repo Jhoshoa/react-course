@@ -33,7 +33,7 @@ const MainApp = () => {
             {/* This one way to go to adefault route that doesn't exist */}
             {/* <Route path='/*' element={ <LoginPage />} /> */}
 
-            Another way
+            {/* Another way */}
             <Route path='/*' element={ <Navigate to='/about' /> } />
         </Routes>
     </UserProvider>
