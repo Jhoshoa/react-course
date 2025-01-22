@@ -6,12 +6,10 @@ export const MarvelPage = () => {
   const heroes = getHeroesByPublisher('Marvel Comics');
 
   return (
-    <>
+    <div className='container mt-5'>
       <h1>Search Page</h1>
       <hr />
-      <ul>
-        <HeroeList heroes={heroes} />
-      </ul>
-    </>
+      <HeroeList heroes={heroes} />
+    </div>
   )
 }

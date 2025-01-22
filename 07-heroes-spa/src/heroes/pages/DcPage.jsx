@@ -7,12 +7,10 @@ export const DcPage = () => {
   const heroes = getHeroesByPublisher('DC Comics');
 
   return (
-    <>
+    <div className='container mt-5'>
         <h1>Dc Page</h1>
         <hr />
-        <ul>
-          <HeroeList heroes={heroes} />
-        </ul>
-    </>
+        <HeroeList heroes={heroes} />
+    </div>
   )
 }
