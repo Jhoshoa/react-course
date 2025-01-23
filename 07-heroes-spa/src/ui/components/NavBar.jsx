@@ -4,7 +4,7 @@ import { Link, NavLink, useNavigate } from 'react-router'
 export const NavBar = () => {
 
     const navigate = useNavigate();
-    
+
     const onLogout = () => {
         navigate('/login', {
             replace: true
@@ -25,17 +25,24 @@ export const NavBar = () => {
                 <div className="navbar-nav">
 
                     <NavLink
-                        className={({isActive}) => `nav-item nav-link ${isActive ? 'active': ''}`}
+                        className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
                         to="/marvel"
                     >
                         Marvel
                     </NavLink>
 
                     <NavLink
-                        className={({isActive}) => `nav-item nav-link ${isActive ? 'active': ''}`}
+                        className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
                         to="/dc"
                     >
                         DC
+                    </NavLink>
+
+                    <NavLink
+                        className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
+                        to='/search'
+                    >
+                        Search
                     </NavLink>
                 </div>
             </div>
@@ -45,9 +52,9 @@ export const NavBar = () => {
                     <span className='nav-item nav-link text-primary'>
                         Fernando
                     </span>
-                    <button 
+                    <button
                         className='nav-item nav-link btn'
-                        onClick={ onLogout }
+                        onClick={onLogout}
                     >
                         Logout
                     </button>
